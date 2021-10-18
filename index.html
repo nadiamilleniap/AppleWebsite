@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apple Website Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+            <img src="C:\Users\nadmi\programming\Website\apple.png" class="logo">
+                <nav> 
+                    <ul id="menuList">
+                        <li><a href="">Mac</a></li>
+                        <li><a href="">iPad</a></li>
+                        <li><a href="">iPhone</a></li>
+                        <li><a href="">Watch</a></li>
+                    </ul>
+                </nav>
+            <img src="C:\Users\nadmi\programming\Website\menu-icon-19353.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>Apple's Newest Release<br>Iphone 13</h2>
+                <h3>Faster than the fast</h3>
+                <p>Wireless Charging</p>
+                <h4>$1250</h4>
+                <button type="button">Buy Now<img src="C:\Users\nadmi\programming\Website\arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="C:\Users\nadmi\programming\Website\ip13.jpg" class="ip13">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="C:\Users\nadmi\programming\Website\add.png">
+                    <p style="color:black"><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <img src="C:\Users\nadmi\programming\Website\fb.png">
+            <img src="C:\Users\nadmi\programming\Website\tw.png">
+            <img src="C:\Users\nadmi\programming\Website\ig.png">
+
+                
+        </div>
+            <script>
+                var menuList = document.getElementById("menuList");
+
+                menuList.style.maxHeight = "0px";
+
+                function togglemenu(){
+                    if(menuList.style.maxHeight == "0px")
+                        { 
+                            menuList.style.maxHeight = "130px";
+                        }
+                        else
+                        {
+                            menuList.style.maxHeight = "0px";
+                        }
+                }
+            </script>
+    </body>
+</html>
